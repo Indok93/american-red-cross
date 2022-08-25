@@ -1,0 +1,58 @@
+Partials til American Red Cross projekt
+
+Husk:
+For at benytte @mixin i en partial, skal det linkes med @use efterfulgt af navn,
+derefter bruge @include for at aktivere den information, som er lagret i vores mixin.
+
+1. Farver (colors)
+    - Alle farver brand gruiden fortæller mig jeg skal benytte
+    - Opsættes som variabler med $
+
+2. Typografi (fonts)
+    - Oprette en mixin med navngivningen mainFonts
+    - Import font url'erne der skal benyttes
+ 
+
+3. Logo's (logo)
+    - Oprette mixins med navngivning buttonLogo, classicLogo, flatdiscLogo
+    - Valg af mixin herunder er afhæning af, hvilken type information websiden indeholder
+    - Forventet 2x clear space fra logoet til hver side. 1x = højden og bredden af en arm på crosset
+    - Forventet minimum size: logo button 26 pixels i højden og tekst 6 pixels i højden
+    - Forventet seperation af button grafik og texten "American Red Cross" (teksten skal inkluderes i logoets boks)
+    
+    buttonLogo: For personlig og unikker ekspressioner, såvel som tv, web og email.
+    classicLogo: For katastrofiske situationer eller når marketing-orienteret logo ikke er nødvendig.
+    flatdiscLogo: For mørk baggrund
+
+4. Formular (forms)
+    - Oprette mixin med navngivning formStyle
+            - indeholder input med runde hjørner og padding
+
+5. Knapper (buttons)
+    - Oprette mixin med navngivning buttonStyle
+            - indeholder baggrundsfarve, tekstfarve, hover-effekt
+
+6. Titler (headings)
+    - Oprette mixin med navngivning headingStyle
+        - headingStyle: indeholder font type, størrelse og tykkelse
+        
+
+7. Tekst (paragraphs)
+    - Oprette mixin med navngivning subStyle
+        - subStyle: indeholder font type, størrelse og tykkelse
+
+8. Galleri-kort (cards)
+    - Oprette mixin med navngivning cardStyle
+        - galleryCard: indeholder to kasser. Billede og billedtekst
+
+9. Baggrundsbilleder (background-images)
+    - Oprette mixin med navngivning backgroundImageStyling
+        - backgroundImageStyling: indeholder positionering
+
+10. Links (read-more)
+    - oprette mixin med navngivning linkStyle
+        - linkStyle: indeholder hover-effektog anden cursor
+
+11. Ikoner (icons)
+    - oprette mixin med navngivning iconStyle
+        - iconStyle: indeholder positionering og anden cursor
