@@ -1,0 +1,20 @@
+@use "colors" as c;
+
+@mixin buttonStyle {
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: c.$Red-Cross-Red;
+    border: 1px solid c.$Red-Cross-Red;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: c.$White;
+}
+
+@mixin buttonHover {
+    background-color: c.$Deep-Red;
+    border: 1px solid c.$Deep-Red;
+    cursor: pointer;
+}

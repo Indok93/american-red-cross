@@ -1,0 +1,21 @@
+@use "colors" as c;
+
+@mixin headingStyleWhite {
+    color: c.$White;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -2px;
+}
+
+@mixin headingStyleBlack {
+    color: c.$Black;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    letter-spacing: -2px;
+}

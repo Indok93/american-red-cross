@@ -1,0 +1,13 @@
+@use "colors" as c;
+
+@mixin buttonLogo {
+    width: 100px;
+                padding: 12px;
+                border-left: 1px solid c.$Medium-Grey;
+                border-right: 1px solid c.$Medium-Grey;
+                border-color: rgba(c.$Medium-Grey,0.5);
+                img{
+                    display: block;
+                    width: 100%;
+                }
+}

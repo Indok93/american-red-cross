@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9F9FA3;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #D7D7D8;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.2);
+}
+header .navbarSecondary {
+  max-width: 100%;
+  border-bottom: 3px solid #9F9FA3;
+  border-color: rgba(159, 159, 163, 0.5);
+}
+header .navbarSecondary ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  max-width: 1250px;
+  margin: auto;
+}
+header .navbarSecondary ul li {
+  display: inline;
+}
+header .navbarSecondary ul li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-transform: capitalize;
+  margin: 0 2px;
+}
+header .navbarSecondary ul li .listItemOne {
+  font-weight: 400;
+}
+header .navbarSecondary ul li .listItemTwo {
+  font-weight: bold;
+}
+header .navbarSecondary ul li .listItemThree {
+  font-weight: thin;
+}
+header .navbarSecondary ul li .listItemFour {
+  font-weight: bold;
+  color: #ED1B2E;
+}
+header div {
+  display: flex;
+  max-width: 1250px;
+  margin: auto;
+  background-color: #D7D7D8;
+  position: relative;
+}
+header div nav {
+  display: flex;
+}
+header div nav div {
+  width: 100px;
+  padding: 12px;
+  border-left: 1px solid #9F9FA3;
+  border-right: 1px solid #9F9FA3;
+  border-color: rgba(159, 159, 163, 0.5);
+}
+header div nav div img {
+  display: block;
+  width: 100%;
+}
+header div nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 40px;
+}
+header div nav ul li {
+  display: inline;
+}
+header div nav ul li a {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6D6E70;
+  text-transform: capitalize;
+}
+header div nav ul li .primaryListHelp {
+  color: #ED1B2E;
+}
+header div nav i {
+  position: absolute;
+  right: 0;
+  border-left: 1px solid #9F9FA3;
+  border-right: 1px solid #9F9FA3;
+  padding: 21px;
+  opacity: 0.5;
+}
+
+main {
+  max-width: 1348px;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+main .sectionOne {
+  margin-top: 6.656em;
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/fdr-banners/disaster-relief/2022-flood/Water%20DR%20Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505.5px;
+  position: relative;
+}
+main .sectionOne div {
+  position: absolute;
+  top: 8em;
+  left: 2em;
+}
+main .sectionOne div h2 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: -2px;
+}
+main .sectionOne div h2 span {
+  text-transform: lowercase;
+}
+main .sectionOne div p {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+main .sectionOne div p span {
+  text-transform: capitalize;
+}
+main .sectionOne div button {
+  margin-top: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ED1B2E;
+  border: 1px solid #ED1B2E;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+main .sectionOne div button:hover {
+  background-color: #7F181B;
+  border: 1px solid #7F181B;
+  cursor: pointer;
+}
+main .sectionTwo {
+  margin-top: 0.5em;
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/fdr-banners/disaster-relief/2022-flood/Water%20DR%20Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505.5px;
+  background-image: url("https://www.redcross.org/content/dam/redcrossblood/rcb/home-page/hero-blocks/Aug_Gift_Card.png");
+  position: relative;
+}
+main .sectionTwo div {
+  position: absolute;
+  top: 3em;
+  left: 2em;
+}
+main .sectionTwo div h2 {
+  color: #000000;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: -2px;
+  opacity: 0.8;
+}
+main .sectionTwo div h2 span {
+  text-transform: lowercase;
+}
+main .sectionTwo div p {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.2em;
+  line-height: 1.4em;
+}
+main .sectionTwo div form {
+  display: flex;
+  margin-top: 2em;
+}
+main .sectionTwo div form input {
+  margin-right: 0.5em;
+  padding: 0 15px;
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+}
+main .sectionTwo div form button {
+  margin-top: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ED1B2E;
+  border: 1px solid #ED1B2E;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #FFFFFF;
+  margin-top: 0;
+}
+main .sectionTwo div form button:hover {
+  background-color: #7F181B;
+  border: 1px solid #7F181B;
+  cursor: pointer;
+}
+main .sectionTwo div .terms {
+  margin-top: 5em;
+  font-size: 0.6em;
+}
+main .sectionTwo div .terms a {
+  color: #56A0D3;
+  text-decoration: none;
+}
+main .sectionThree {
+  margin-top: 0.5em;
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/fdr-banners/disaster-relief/2022-flood/Water%20DR%20Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505.5px;
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/ts-banners/TS-CPR-Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+}
+main .sectionThree div h2 {
+  color: #FFFFFF;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: -2px;
+}
+main .sectionThree div p {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+main .sectionThree div form {
+  display: flex;
+}
+main .sectionFour {
+  height: 510px;
+}
+main .sectionFive {
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/fdr-banners/disaster-relief/2022-flood/Water%20DR%20Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505.5px;
+  background-image: url("https://www.redcross.org/content/dam/redcross/uncategorized/12/Vol-Banner-volunteer-looking-at-fire-1920x703.jpg.transform/1288/q70/feature/image.jpeg");
+}
+main .sectionSix {
+  height: 510px;
+}
+main .sectionSeven {
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/fdr-banners/disaster-relief/2022-flood/Water%20DR%20Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 505.5px;
+  background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/biomed-banner/campbell-campaign/Neve-Desktop2.jpg");
+}
+main .sectionEight {
+  height: 510px;
+}
+main .sectionNine {
+  height: 600px;
+}/*# sourceMappingURL=main.css.map */

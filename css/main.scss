@@ -1,0 +1,159 @@
+@use "colors" as c;
+@use "fonts";
+@use "reset";
+@use "logos";
+@use "navigation";
+@use "buttons";
+@use "titles";
+@use "paragraphs";
+@use "backgroundImages";
+@use "inputs";
+
+@include fonts.mainFonts;
+// font-family: 'Tinos', serif;
+// font-family: 'Montserrat', sans-serif;
+*{
+     @include reset.reset-universal;
+}
+body{
+    background-color: c.$Medium-Grey;
+}
+header{
+    @include navigation.navigationHeader;
+}
+main{
+    max-width: 1348px;
+    margin: auto;
+    background-color: c.$White;
+    .sectionOne{
+        margin-top: 6.656em;
+        @include backgroundImages.backgroundImageStyle;
+        position: relative;
+        div{
+            position: absolute;
+            top: 8em;
+            left: 2em;
+            h2{
+                @include titles.headingStyleWhite;
+                span{
+                    text-transform: lowercase;
+                }
+            }
+            p{
+                @include paragraphs.paragraphStyleWhite;
+                span{
+                    text-transform: capitalize;
+                }
+            }
+            button{
+                @include buttons.buttonStyle;
+            }
+            button:hover{
+                @include buttons.buttonHover;
+            }
+        }
+    }
+    .sectionTwo{
+        margin-top: 0.5em;
+        @include backgroundImages.backgroundImageStyle;
+        background-image: url("https://www.redcross.org/content/dam/redcrossblood/rcb/home-page/hero-blocks/Aug_Gift_Card.png");
+        position: relative;
+        div{
+            position: absolute;
+            top: 3em;
+            left: 2em;
+            h2{
+                @include titles.headingStyleBlack;
+                opacity: 0.8;
+                span{
+                    text-transform: lowercase;
+                }
+            }
+            p{
+                @include paragraphs.paragraphStyleBlack;
+                line-height: 1.4em;
+            }
+            form{
+                display: flex;
+                margin-top: 2em;
+                input{
+                    @include inputs.inputStyle;
+                }
+                button{
+                    @include buttons.buttonStyle;
+                    margin-top: 0;
+                }
+                button:hover{
+                    @include buttons.buttonHover;
+                }
+            }
+            .terms{
+                margin-top: 5em;
+                font-size: 0.6em;
+                a{
+                    color: c.$Sky-Blue;
+                    text-decoration: none;
+                }   
+            }
+        }
+
+    }
+    .sectionThree{
+        margin-top: 0.5em;
+        @include backgroundImages.backgroundImageStyle;
+        background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/ts-banners/TS-CPR-Desktop.jpg.transform/1288/q70/feature/image.jpeg");
+        div{
+            h2{
+                @include titles.headingStyleWhite;
+            }
+            p{
+                @include paragraphs.paragraphStyleWhite;
+            }
+            form{
+                display: flex;
+                
+                select{
+                    option{
+
+                    }
+                }
+                input{
+
+                }
+                button{
+
+                }
+                button:hover{
+
+                }
+            }
+            .footertext{
+
+            }
+        }
+    }
+    .sectionFour{
+        height: 510px;
+
+    }
+    .sectionFive{
+        @include backgroundImages.backgroundImageStyle;
+        background-image: url("https://www.redcross.org/content/dam/redcross/uncategorized/12/Vol-Banner-volunteer-looking-at-fire-1920x703.jpg.transform/1288/q70/feature/image.jpeg");
+    }
+    .sectionSix{
+        height: 510px;
+
+    }
+    .sectionSeven{
+        @include backgroundImages.backgroundImageStyle;
+        background-image: url("https://www.redcross.org/content/dam/redcross/homepage-assets/biomed-banner/campbell-campaign/Neve-Desktop2.jpg");
+
+    }
+    .sectionEight{
+        height: 510px;
+
+    }
+    .sectionNine{
+        height: 600px;
+    }
+}
